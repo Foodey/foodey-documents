@@ -1,0 +1,114 @@
+@startuml Ordering Activity Diagram
+
+|Customer|
+start
+:Enter Shopping Page;
+group Selecting Product
+  repeat
+  :Select Product;
+  if (View Product Details?) then (yes)
+    :Redirect to "Product Detail" Page;
+  else (no)
+  endif
+    :Select Product Quantity;
+  if (Add to Cart?) then (yes)
+    |System|
+    :Add Product to Cart;
+    :Increase Shopping Cart Number at Top-Right;
+  else (no)
+  endif
+  |Customer|
+  repeat while (Select Another Product?) is (yes) not (no)
+end group
+:Click "Shopping Cart";
+
+|System|
+:Redirect to "Shopping Cart" Page;
+
+|Customer|
+:Change Product in Cart (Quantity, Deleting);
+
+if (Click "Checkout"?) then (yes)
+  |System|
+  :Redirect to "Checkout" Page;
+else (no)
+endif
+|Customer|
+if (Click "Discount"?) then (yes)
+  |System|
+  :Redirect to "Discount" Page;
+  |Customer|
+  :Choose Discount;
+  |System|
+  if (Discount is Valid?) then (yes)
+    :Apply Discount;
+  else (no)
+  endif
+else (no)
+endif
+|Customer|
+:Click "Confirm Order";
+
+group  Validating Order
+  |System|
+  while (has Address?) is (no)
+    :Redirect to "Address" Page;
+    |Customer|
+    :Enter Address;
+    :Click "Save Address";
+    |System|
+    if (Address is Valid?) then (yes)
+      :Save Address (Locally or Database);
+    else (no)
+    endif
+  end while (yes)
+
+  while (has Payment?) is (no)
+    :Redirect to "Payment" Page;
+    |Customer|
+    :Enter Payment Information;
+    :Click "Save Payment Information";
+    |System|
+    if (Payment is Valid?) then (yes)
+      :Save Payment (Locally or Database);
+    else (no)
+    endif
+  end while (yes)
+endgroup
+
+|System|
+if (No Error?) then (yes)
+  :Submit Order;
+  :Redirect to "Order Summary" Page;
+else (no)
+  :Redirect to "Error" Page;
+endif
+|Shipper|
+:Receive Order;
+:Change Order Status to Received;
+
+|Shop Owner|
+:Change Order Status to Preparing;
+:Prepare Order;
+:Give Order to Shipper;
+:Change Order Status to Delivering;
+
+|Shipper|
+:Deliver Order;
+|Customer|
+:Receive Order;
+if (Not pay yet?) then (yes)
+  :Pay;
+else (no)
+endif
+|Shipper|
+:Receive Payment;
+if (Not pay yet?) then (yes)
+  :Receive Payment;
+else (no)
+endif
+:Update Order Status to Delivered;
+
+stop
+
+@enduml

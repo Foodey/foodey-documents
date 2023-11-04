@@ -1,0 +1,140 @@
+@startuml Foodey_usecase
+
+left to right direction
+
+actor "Customer" as Cm
+actor "Restaurant Owner" as RO
+actor "Shipper" as Shp
+' actor "System Admin" as SA
+
+rectangle Foodey{
+    '================================Customer================================'
+    usecase "Login" as UC1
+    usecase "Choose Meal" as UC2
+    usecase "Add to Cart" as UC3
+    usecase "Place Order" as UC4 
+    usecase "Make Payment" as UC5 
+    usecase "Track Order" as UC6
+
+    UC2 .l.> UC1: <<include>>
+    UC3 .l.> UC2: <<include>>
+    UC4 .l.> UC3: <<include>>
+    UC6 .l.> UC4: <<include>>
+
+    usecase "Register" as UC7
+    usecase "Reset Password" as UC8
+    UC1 ..> UC7: <<include>>
+    UC1 <.. UC8: <<extend>>
+
+    usecase "Search Restaurant" as UC9
+    usecase "Search Meal" as UC10
+    UC2 <.. UC9: <<extend>>
+    UC2 ..> UC10: <<include>>
+
+    usecase "Choose Quantity" as UC11
+    usecase "Leave a Note" as UC12
+    UC3 ..> UC11: <<include>>
+    UC3 <.. UC12: <<extend>>
+
+    usecase "Set Delivery Information" as UC13
+    UC4 ..> UC13: <<include>>
+
+    usecase "Contact Restaurant Owner" as UC14
+    UC6 <.. UC14: <<extend>>
+
+    usecase "Pay by Cash" as UC15
+    usecase "Pay by Online Banking" as UC16
+    UC5 <|-- UC15
+    UC5 <|-- UC16
+    UC4 <.. UC16: <<extend>>
+
+    usecase "Confirm Receipt" as UC17
+    usecase "Leave a Review" as UC18
+    UC17 <.. UC18: <<extend>>
+
+    '================================Restaurant Owner================================'
+    usecase "Register a Restaurant" as UC19
+    usecase "Add Restaurant Information" as UC20
+    UC20 <.. UC19: <<include>>
+
+    usecase "CRUD Menu" as UC21
+
+    usecase "CRUD Voucher" as UC22
+
+    usecase "Track Order" as UC23
+    usecase "Update Order Status" as UC24
+    usecase "Contact Customer" as UC25
+    usecase "Contact Shipper" as UC26
+    usecase "Reply/Delete/Hide Customers' Review" as UC27
+    UC24 ..> UC23: <<include>>
+    UC25 ..> UC23: <<extend>>
+    UC26 ..> UC23: <<extend>>
+    UC27 ..> UC23: <<extend>>
+
+    usecase "View Revenue Report" as UC28
+
+    '================================Shipper================================'
+    usecase "Receive Delivery Order Information" as UC29
+    usecase "Accept/Decline Orders" as UC30
+    usecase "Update Delivery Status" as UC31
+    usecase "Contact Restarant Owner/Customer" as UC32
+    UC30 .r.> UC29: <<include>>
+    UC31 .r.> UC30: <<include>>
+
+    ' '================================System Admin================================'
+    ' usecase "View/Search Users Information" as UC33
+    ' usecase "Customer Information" as UC34
+    ' usecase "Restaurant Owner Information" as UC35
+    ' usecase "Shipper Information" as UC36
+    ' UC33 <|-- UC34
+    ' UC33 <|-- UC35
+    ' UC33 <|-- UC36
+
+    ' usecase "Approve/Reject Request" as UC37
+    ' usecase "Restaurant Owner Request" as UC38
+    ' usecase "Shipper Request" as UC39
+    ' UC37 <|-- UC38
+    ' UC37 <|-- UC39
+}
+'===== Cm usecases ====='
+Cm -- UC1
+Cm -- UC2
+Cm -- UC3
+Cm -- UC4
+Cm -- UC5
+Cm -- UC6
+Cm -- UC17
+
+'===== RO usecases ====='
+UC1 -- RO
+UC19 -- RO
+UC21 -- RO
+UC22 -- RO
+UC23 -- RO
+UC24 -- RO
+UC28 -- RO
+
+'===== Shp usecases ====='
+UC1 -- Shp
+UC29 -- Shp
+UC30 - Shp
+UC31 -- Shp
+UC32 -- Shp
+
+' '===== SA usecases ====='
+' SA -- UC33
+' SA -- UC37
+
+'Hidden link to customize the layout
+UC15 -[hidden]- UC20
+UC15 -[hidden]- UC21
+UC21 -[hidden]- UC22
+UC15 -[hidden]- UC25
+UC15 -[hidden]- UC28
+
+UC15 -[hidden]- UC29
+UC15 -[hidden]- UC30
+UC15 -[hidden]- UC31
+UC15 -[hidden]- UC32
+
+@enduml
