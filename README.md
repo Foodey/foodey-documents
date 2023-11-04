@@ -1,3 +1,9 @@
 ## Document for Foodey Project
 
-👽 [Client-Requirement](./Project/Requirements/ClientRequirement.md)
+🔥 [Policy](./Policies/README.md)
+
+📚 [Requirement](./Project/Requirements/README.md)
+
+📈 [Diagrams](./Project/Diagrams/README.md)
+
+🎨 [Designs](./Project/Designs/README.md)
