@@ -1,0 +1,18 @@
+@startuml ClassDiagram
+
+class RegisteredUser
+class Foodeist
+class ShopOwner
+class Admin
+class Shipper
+
+RegisteredUser <|-- Foodeist
+RegisteredUser <|-- ShopOwner
+RegisteredUser <|-- Admin
+RegisteredUser <|-- Shipper
+
+
+
+
+
+@enduml

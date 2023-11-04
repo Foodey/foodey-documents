@@ -62,46 +62,48 @@ Here is the detail information for class diagram for the project.
 
 Inherit from [`Person`](#person)
 
-| Element |  Access   | Type  | Unique | Notes | Description |
-| :------ | :-------: | :---: | :----: | :---- | :---------- |
-| **id**  | `private` | `int` | `true` |       |             |
+| Element           |  Access   |              Type               | Unique  | Notes | Description |
+| :---------------- | :-------: | :-----------------------------: | :-----: | :---- | :---------- |
+| **id**            | `private` |              `int`              | `true`  |       |             |
+| **shoppingCart**  | `private` | [`ShoppingCart`](#shoppingcart) | `false` |       |             |
+| **callHotline()** | `public`  |             `bool`              | `false` |       |             |
+| **viewOrder()**   | `public`  |  `array<`[`Order`](#order)`>`   | `false` |       |             |
 
 ##### Shipper
 
 Inherit from [`Person`](#person)
 
-| Element          |  Access   |         Type          | Unique  | Notes | Description                        |
-| :--------------- | :-------: | :-------------------: | :-----: | :---- | :--------------------------------- |
-| **id**           | `private` |         `int`         | `true`  |       |                                    |
-| **vehicle**      | `private` |       `string`        | `false` |       | The vehicle of the shipper to work |
-| **activityArea** | `private` | [`Address`](#address) | `false` |       | The area for shipper to work       |
+| Element     |  Access   |   Type   | Unique  | Notes | Description                        |
+| :---------- | :-------: | :------: | :-----: | :---- | :--------------------------------- |
+| **id**      | `private` |  `int`   | `true`  |       |                                    |
+| **vehicle** | `private` | `string` | `false` |       | The vehicle of the shipper to work |
 
 ##### Address
 
-| Element      | Access    | Type             | Unique  | Notes | Description |
-| :----------- | :-------- | :--------------- | :------ | :---- | :---------- |
-| **id**       | `private` | `int`            | `true`  |       |             |
-| **city**     | `private` | `string`         | `false` |       |             |
-| **district** | `private` | `string`         | `false` |       |             |
-| **street**   | `private` | `string`         | `false` |       |             |
-| **houseNo**  | `private` | `string` or `""` | `false` |       |             |
+| Element         | Access    | Type             | Unique  | Notes | Description |
+| :-------------- | :-------- | :--------------- | :------ | :---- | :---------- |
+| **id**          | `private` | `int`            | `true`  |       |             |
+| **city**        | `private` | `string`         | `false` |       |             |
+| **district**    | `private` | `string`         | `false` |       |             |
+| **street**      | `private` | `string`         | `false` |       |             |
+| **houseNumber** | `private` | `string` or `""` | `false` |       |             |
 
 ##### Order
 
-| Element          |  Access   |             Type              | Unique  | Notes | Description |
-| :--------------- | :-------: | :---------------------------: | :-----: | :---- | :---------- |
-| **id**           | `private` |             `int`             | `true`  |       |             |
-| **account**      | `private` |     [`Account`](#account)     | `false` |       |             |
-| **store**        | `private` |       [`Store`](#store)       | `false` |       |             |
-| **shipper**      | `private` |     [`Shipper`](#shipper)     | `false` |       |             |
-| **status**       | `private` |           `string`            | `false` |       |             |
-| **detail**       | `private` | [`OrderDetail`](#orderdetail) | `false` |       |             |
-| **create()**     | `public`  |            `bool`             | `false` |       |             |
-| **cancel()**     | `public`  |            `bool`             | `false` |       |             |
-| **pay()**        | `public`  |            `bool`             | `false` |       |             |
-| **ship()**       | `public`  |            `bool`             | `false` |       |             |
-| **receive()**    | `public`  |            `bool`             | `false` |       |             |
-| **showDetail()** | `public`  |           `string`            | `false` |       |             |
+| Element          |  Access   |             Type              | Unique  | Notes                                                                                          | Description |
+| :--------------- | :-------: | :---------------------------: | :-----: | :--------------------------------------------------------------------------------------------- | :---------- |
+| **id**           | `private` |             `int`             | `true`  |                                                                                                |             |
+| **customer**     | `private` |    [`Customer`](#customer)    | `false` |                                                                                                |             |
+| **store**        | `private` |       [`Store`](#store)       | `false` |                                                                                                |             |
+| **shipper**      | `private` |     [`Shipper`](#shipper)     | `false` |                                                                                                |             |
+| **status**       | `private` |             `int`             | `false` | The value must be `1: Waiting`, `2: Received`, `3: Preparing`, `4: Delivering`, `5: Completed` |             |
+| **detail**       | `private` | [`OrderDetail`](#orderdetail) | `false` |                                                                                                |             |
+| **create()**     | `public`  |            `bool`             | `false` |                                                                                                |             |
+| **cancel()**     | `public`  |            `bool`             | `false` |                                                                                                |             |
+| **pay()**        | `public`  |            `bool`             | `false` |                                                                                                |             |
+| **ship()**       | `public`  |            `bool`             | `false` |                                                                                                |             |
+| **receive()**    | `public`  |            `bool`             | `false` |                                                                                                |             |
+| **viewDetail()** | `public`  |           `string`            | `false` |                                                                                                |             |
 
 ##### OrderDetail
 
