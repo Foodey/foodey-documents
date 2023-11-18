@@ -10,32 +10,32 @@ Here is the detail information for class diagram for the project.
 
 #### 2. Class
 
-| Name                                    | Description                                                                                                                                                                                                                                        |
-| :-------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Account](#account)                     |                                                                                                                                                                                                                                                    |
-| [Customer](#customer)                   | The abstract class of FoodeyGuest and FoodeMember                                                                                                                                                                                                  |
-| [FoodeyGuest](#foodeyguest)             | Unregistered account customer                                                                                                                                                                                                                      |
-| [FoodeyMember](#foodeymember)           | Registered account customer                                                                                                                                                                                                                        |
-| [SystemAdmin](#systemadmin)             |                                                                                                                                                                                                                                                    |
-| [Shipper](#shipper)                     |                                                                                                                                                                                                                                                    |
-| [ShopOwner](#shopowner)                 |                                                                                                                                                                                                                                                    |
-| [ShoppingCart](#shoppingcart)           | Users will add product items that they intend to buy to the shopping cart                                                                                                                                                                          |
-| [ShopMenu](#shopmenu)                   |                                                                                                                                                                                                                                                    |
-| [Shop](#shop)                           |                                                                                                                                                                                                                                                    |
-| [Order](#order)                         | This will encapsulate a buying order to buy everything in the shopping cart                                                                                                                                                                        |
-| [OrderLog](#orderlog)                   | Will keep a track of the status of orders, such as unshipped, pending, complete, canceled, etc.                                                                                                                                                    |
-| [OrderItem](#orderitem)                 | This class will encapsulate a product item that the users will be buying or placing in the shopping cart. For example, a pen could be a product and if there are 10 pens in the inventory, each of these 10 pens will be considered a product item |
-| [Bill](#bill)                           | Encapsulate the entity of the bill                                                                                                                                                                                                                 |
-| [Product](#product)                     | This class will encapsulate the entity that the users of our system will be buying and selling. Each Product will belong to a ProductCategory                                                                                                      |
-| [ProductCategory](#productcategory)     | This will encapsulate the different categories of products, such as books, electronics, etc                                                                                                                                                        |
-| [Review](#review)                       | The abstract class of ShopReview and ShipperReview                                                                                                                                                                                                 |
-| [ShopReview](#shopreview)               | Any registered member can add a review about a shop                                                                                                                                                                                                |
-| [ShipperReview](#productreview)         | Any registered member can add a review about a shipper                                                                                                                                                                                             |
-| [Catalog](#catalog)                     | Users of our system can search for products by their name or category and shop by their name. This class will keep an index of all products for faster search                                                                                      |
-| [Notification](#notification)           | This class will take care of sending notifications to customers                                                                                                                                                                                    |
-| [SMSNotification](#smsnotification)     | This class will take care of sending notifications to customers by SMS                                                                                                                                                                             |
-| [EmailNotification](#emailnotification) | This class will take care of sending notifications to customers by Email                                                                                                                                                                           |
-| [Payment](#payment)                     | This class will encapsulate the payment for an order. Members can pay through credit card(not now) or cash                                                                                                                                         |
+| Name                                      | Description                                                                                                                                                                                                                                              |
+| :---------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Account](#account)                       |                                                                                                                                                                                                                                                          |
+| [Customer](#customer)                     | The abstract class of FoodeyGuest and FoodeMember                                                                                                                                                                                                        |
+| [FoodeyGuest](#foodeyguest)               | Unregistered account customer                                                                                                                                                                                                                            |
+| [FoodeyMember](#foodeymember)             | Registered account customer                                                                                                                                                                                                                              |
+| [SystemAdmin](#systemadmin)               |                                                                                                                                                                                                                                                          |
+| [Shipper](#shipper)                       |                                                                                                                                                                                                                                                          |
+| [RestaurantOwner](#restaurantowner)       |                                                                                                                                                                                                                                                          |
+| [RestaurantpingCart](#restaurantpingcart) | Users will add product items that they intend to buy to the restaurantping cart                                                                                                                                                                          |
+| [RestaurantMenu](#restaurantmenu)         |                                                                                                                                                                                                                                                          |
+| [Restaurant](#restaurant)                 |                                                                                                                                                                                                                                                          |
+| [Order](#order)                           | This will encapsulate a buying order to buy everything in the restaurantping cart                                                                                                                                                                        |
+| [OrderLog](#orderlog)                     | Will keep a track of the status of orders, such as unshipped, pending, complete, canceled, etc.                                                                                                                                                          |
+| [OrderItem](#orderitem)                   | This class will encapsulate a product item that the users will be buying or placing in the restaurantping cart. For example, a pen could be a product and if there are 10 pens in the inventory, each of these 10 pens will be considered a product item |
+| [Bill](#bill)                             | Encapsulate the entity of the bill                                                                                                                                                                                                                       |
+| [Product](#product)                       | This class will encapsulate the entity that the users of our system will be buying and selling. Each Product will belong to a ProductCategory                                                                                                            |
+| [ProductCategory](#productcategory)       | This will encapsulate the different categories of products, such as books, electronics, etc                                                                                                                                                              |
+| [Review](#review)                         | The abstract class of RestaurantReview and ShipperReview                                                                                                                                                                                                 |
+| [RestaurantReview](#restaurantreview)     | Any registered member can add a review about a restaurant                                                                                                                                                                                                |
+| [ShipperReview](#productreview)           | Any registered member can add a review about a shipper                                                                                                                                                                                                   |
+| [Catalog](#catalog)                       | Users of our system can search for products by their name or category and restaurant by their name. This class will keep an index of all products for faster search                                                                                      |
+| [Notification](#notification)             | This class will take care of sending notifications to customers                                                                                                                                                                                          |
+| [SMSNotification](#smsnotification)       | This class will take care of sending notifications to customers by SMS                                                                                                                                                                                   |
+| [EmailNotification](#emailnotification)   | This class will take care of sending notifications to customers by Email                                                                                                                                                                                 |
+| [Payment](#payment)                       | This class will encapsulate the payment for an order. Members can pay through credit card(not now) or cash                                                                                                                                               |
 
 #### 2. Interface
 
@@ -70,11 +70,11 @@ Here is the detail information for class diagram for the project.
 
 ##### Customer
 
-| Element                |  Access  |                 Type                 | Unique | Notes | Description |
-| :--------------------- | :------: | :----------------------------------: | :----: | :---- | :---------- |
-| `getShoppingCart()`    | `public` | `array<`[`OrderItem`](#orderitem)`>` |        |       |             |
-| `addItemToCart()`      | `public` |                `bool`                |        |       |             |
-| `removeItemFromCart()` | `public` |                `bool`                |        |       |             |
+| Element                   |  Access  |                 Type                 | Unique | Notes | Description |
+| :------------------------ | :------: | :----------------------------------: | :----: | :---- | :---------- |
+| `getRestaurantpingCart()` | `public` | `array<`[`OrderItem`](#orderitem)`>` |        |       |             |
+| `addItemToCart()`         | `public` |                `bool`                |        |       |             |
+| `removeItemFromCart()`    | `public` |                `bool`                |        |       |             |
 
 ##### FoodeyGuest
 
@@ -107,7 +107,7 @@ Here is the detail information for class diagram for the project.
 | `account`                 | `private` | [`Account`](#account) | `false` |       |             |
 | `addNewProductCategory()` | `public`  |        `bool`         | `false` |       |             |
 | `modifyProductCategory()` | `public`  |        `bool`         | `false` |       |             |
-| `approveNewShop()`        | `public`  |        `bool`         | `false` |       |             |
+| `approveNewRestaurant()`  | `public`  |        `bool`         | `false` |       |             |
 | `approveNewShipper()`     | `public`  |        `bool`         | `false` |       |             |
 | `blockAccount()`          | `public`  |        `bool`         | `false` |       |             |
 
@@ -126,19 +126,19 @@ Here is the detail information for class diagram for the project.
 | `receiveOrder()`                         | `public`  |         [`Order`](#order)         | `false` |       |                                      |
 | `declineOrder()`                         | `public`  |         [`Order`](#order)         | `false` |       |                                      |
 
-##### ShopOwner
+##### RestaurantOwner
 
-| Element          |  Access   |            Type            | Unique  | Notes | Description                          |
-| :--------------- | :-------: | :------------------------: | :-----: | :---- | :----------------------------------- |
-| `identifyImages` | `private` |      `array<string>`       | `false` |       | 2 anh can cuoc cong dan (truoc, sau) |
-| `account`        | `private` |   [`Account`](#account)    | `false` |       |                                      |
-| `getShops()`     | `public`  | `array<`[`Shop`](#shop)`>` | `false` |       |                                      |
-| `registerShop()` | `public`  |          `boold`           | `false` |       |                                      |
-| `updateShop()`   | `public`  |           `bool`           | `false` |       |                                      |
-| `deleteShop()`   | `public`  |          `boold`           | `false` |       |                                      |
-| `trackProfit()`  | `public`  |      `unsigned long`       | `false` |       |                                      |
+| Element                |  Access   |                  Type                  | Unique  | Notes | Description                          |
+| :--------------------- | :-------: | :------------------------------------: | :-----: | :---- | :----------------------------------- |
+| `identifyImages`       | `private` |            `array<string>`             | `false` |       | 2 anh can cuoc cong dan (truoc, sau) |
+| `account`              | `private` |         [`Account`](#account)          | `false` |       |                                      |
+| `getRestaurants()`     | `public`  | `array<`[`Restaurant`](#restaurant)`>` | `false` |       |                                      |
+| `registerRestaurant()` | `public`  |                `boold`                 | `false` |       |                                      |
+| `updateRestaurant()`   | `public`  |                 `bool`                 | `false` |       |                                      |
+| `deleteRestaurant()`   | `public`  |                `boold`                 | `false` |       |                                      |
+| `trackProfit()`        | `public`  |            `unsigned long`             | `false` |       |                                      |
 
-##### ShoppingCart
+##### RestaurantpingCart
 
 | Element                |  Access   |                 Type                 | Unique  | Notes | Description |
 | :--------------------- | :-------: | :----------------------------------: | :-----: | :---- | :---------- |
@@ -156,7 +156,7 @@ Here is the detail information for class diagram for the project.
 | Element                    |  Access   |                 Type                 | Unique  | Notes | Description |
 | :------------------------- | :-------: | :----------------------------------: | :-----: | :---- | :---------- |
 | `id`                       | `private` |           `unsigned long`            | `true`  |       |             |
-| `shop`                     | `private` |           [`Shop`](#shop)            | `false` |       |             |
+| `restaurant`               | `private` |     [`Restaurant`](#restaurant)      | `false` |       |             |
 | `shipper`                  | `private` |        [`Shipper`](#shipper)         | `false` |       |             |
 | `items`                    | `private` | `array<`[`OrderItem`](#orderitem)`>` | `false` |       |             |
 | `status`                   | `private` |    [`OrderStatus`](#orderstatus)     | `false` |       |             |
@@ -204,7 +204,7 @@ Here is the detail information for class diagram for the project.
 | `description`                                                       | `private` |               `string`                |        |       |             |
 | `category`                                                          | `private` | [`ProductCategory`](#productcategory) |        |       |             |
 | `inventoryQuantity`                                                 | `private` |                 `int`                 |        |       |             |
-| `shopId`                                                            | `private` |            `unsigned long`            |        |       |             |
+| `restaurantId`                                                      | `private` |            `unsigned long`            |        |       |             |
 | `createAt`                                                          | `private` |              `DateTime`               |        |       |             |
 | `updateAt`                                                          | `private` |              `DateTime`               |        |       |             |
 | `getInventoryQuantity()`                                            | `public`  |                 `int`                 |        |       |             |
@@ -217,19 +217,19 @@ Here is the detail information for class diagram for the project.
 | `name`        | `private` | `string` | `true`  |       |             |
 | `description` | `private` | `string` | `false` |       |             |
 
-##### Shop
+##### Restaurant
 
-| Element    |  Access   |                Type                | Unique  | Notes | Description |
-| :--------- | :-------: | :--------------------------------: | :-----: | :---- | :---------- |
-| `name`     | `private` |              `string`              | `false` |       |             |
-| `image`    | `private` |              `string`              | `false` |       |             |
-| `address`  | `private` |              `string`              | `false` |       |             |
-| `phone`    | `private` |              `string`              | `false` |       |             |
-| `email`    | `private` |              `string`              | `false` |       |             |
-| `menus`    | `private` | `array<`[`ShopMenu`](#shopmenu)`>` | `false` |       |             |
-| `branches` | `private` |     `array<`[`Shop`](#shop)`>`     | `false` |       |
+| Element    |  Access   |                      Type                      | Unique  | Notes | Description |
+| :--------- | :-------: | :--------------------------------------------: | :-----: | :---- | :---------- |
+| `name`     | `private` |                    `string`                    | `false` |       |             |
+| `image`    | `private` |                    `string`                    | `false` |       |             |
+| `address`  | `private` |                    `string`                    | `false` |       |             |
+| `phone`    | `private` |                    `string`                    | `false` |       |             |
+| `email`    | `private` |                    `string`                    | `false` |       |             |
+| `menus`    | `private` | `array<`[`RestaurantMenu`](#restaurantmenu)`>` | `false` |       |             |
+| `branches` | `private` |     `array<`[`Restaurant`](#restaurant)`>`     | `false` |       |
 
-##### ShopMenu
+##### RestaurantMenu
 
 | Element       |  Access   |               Type               | Unique  | Notes | Description |
 | :------------ | :-------: | :------------------------------: | :-----: | :---- | :---------- |
@@ -250,13 +250,13 @@ Here is the detail information for class diagram for the project.
 | `updateAt`    | `private` |      `DateTime`       | `false` |       |             |
 | `getRating()` | `public`  |        `float`        | `false` |       |             |
 
-##### ShopReview
+##### RestaurantReview
 
 **NOTE**: Inherit from [`Review`](#review) class.
 
-| Element  |  Access   |      Type       | Unique  | Notes | Description |
-| :------- | :-------: | :-------------: | :-----: | :---- | :---------- |
-| `shopId` | `private` | `unsigned long` | `false` |       |             |
+| Element        |  Access   |      Type       | Unique  | Notes | Description |
+| :------------- | :-------: | :-------------: | :-----: | :---- | :---------- |
+| `restaurantId` | `private` | `unsigned long` | `false` |       |             |
 
 ##### ShipperReview
 
@@ -268,11 +268,11 @@ Here is the detail information for class diagram for the project.
 
 ##### Catalog
 
-| Element             |  Access   |                   Type                    | Unique  | Notes | Description |
-| :------------------ | :-------: | :---------------------------------------: | :-----: | :---- | :---------- |
-| `productNames`      | `private` | `HashMap<string,`[`Product`](#product)`>` | `false` |       |             |
-| `productCategories` | `private` | `HashMap<string,`[`Product`](#product)`>` | `false` |       |             |
-| `shopNames`         | `private` |    `HashMap<string,`[`Shop`](#shop)`>`    | `false` |       |             |
+| Element             |  Access   |                      Type                       | Unique  | Notes | Description |
+| :------------------ | :-------: | :---------------------------------------------: | :-----: | :---- | :---------- |
+| `productNames`      | `private` |    `HashMap<string,`[`Product`](#product)`>`    | `false` |       |             |
+| `productCategories` | `private` |    `HashMap<string,`[`Product`](#product)`>`    | `false` |       |             |
+| `restaurantNames`   | `private` | `HashMap<string,`[`Restaurant`](#restaurant)`>` | `false` |       |             |
 
 ##### Notification
 
@@ -303,11 +303,11 @@ Here is the detail information for class diagram for the project.
 
 ##### ISearch
 
-| Element                      |  Access  |                Type                | Notes | Description |
-| :--------------------------- | :------: | :--------------------------------: | :---- | ----------- |
-| `searchProductsByName()`     | `public` | `array<`[`Products`](#product)`>`  |       |             |
-| `searchProductsByCatagory()` | `public` | `array<`[`Category`](#category)`>` |       |             |
-| `searchShopsByName()`        | `public` |     `array<`[`Shop`](#shop)`>`     |       |             |
+| Element                      |  Access  |                  Type                  | Notes | Description |
+| :--------------------------- | :------: | :------------------------------------: | :---- | ----------- |
+| `searchProductsByName()`     | `public` |   `array<`[`Products`](#product)`>`    |       |             |
+| `searchProductsByCatagory()` | `public` |   `array<`[`Category`](#category)`>`   |       |             |
+| `searchRestaurantsByName()`  | `public` | `array<`[`Restaurant`](#restaurant)`>` |       |             |
 
 <!-- ------------------------ Enum -------------------------->
 
