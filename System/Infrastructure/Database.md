@@ -1,0 +1,1 @@
+- Use NoSQL database (MongoDB) for storing data
