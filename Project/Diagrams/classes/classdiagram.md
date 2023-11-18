@@ -22,6 +22,7 @@ Here is the detail information for class diagram for the project.
 | [RestaurantpingCart](#restaurantpingcart) | Users will add product items that they intend to buy to the restaurantping cart                                                                                                                                                                          |
 | [RestaurantMenu](#restaurantmenu)         |                                                                                                                                                                                                                                                          |
 | [Restaurant](#restaurant)                 |                                                                                                                                                                                                                                                          |
+| [Branch](#branch)                         |                                                                                                                                                                                                                                                          |
 | [Order](#order)                           | This will encapsulate a buying order to buy everything in the restaurantping cart                                                                                                                                                                        |
 | [OrderLog](#orderlog)                     | Will keep a track of the status of orders, such as unshipped, pending, complete, canceled, etc.                                                                                                                                                          |
 | [OrderItem](#orderitem)                   | This class will encapsulate a product item that the users will be buying or placing in the restaurantping cart. For example, a pen could be a product and if there are 10 pens in the inventory, each of these 10 pens will be considered a product item |
@@ -156,7 +157,7 @@ Here is the detail information for class diagram for the project.
 | Element                    |  Access   |                 Type                 | Unique  | Notes | Description |
 | :------------------------- | :-------: | :----------------------------------: | :-----: | :---- | :---------- |
 | `id`                       | `private` |           `unsigned long`            | `true`  |       |             |
-| `restaurant`               | `private` |     [`Restaurant`](#restaurant)      | `false` |       |             |
+| `restaurant`               | `private` |         [`Branch`](#branch)          | `false` |       |             |
 | `shipper`                  | `private` |        [`Shipper`](#shipper)         | `false` |       |             |
 | `items`                    | `private` | `array<`[`OrderItem`](#orderitem)`>` | `false` |       |             |
 | `status`                   | `private` |    [`OrderStatus`](#orderstatus)     | `false` |       |             |
@@ -219,15 +220,23 @@ Here is the detail information for class diagram for the project.
 
 ##### Restaurant
 
-| Element    |  Access   |                      Type                      | Unique  | Notes | Description |
-| :--------- | :-------: | :--------------------------------------------: | :-----: | :---- | :---------- |
-| `name`     | `private` |                    `string`                    | `false` |       |             |
-| `image`    | `private` |                    `string`                    | `false` |       |             |
-| `address`  | `private` |                    `string`                    | `false` |       |             |
-| `phone`    | `private` |                    `string`                    | `false` |       |             |
-| `email`    | `private` |                    `string`                    | `false` |       |             |
-| `menus`    | `private` | `array<`[`RestaurantMenu`](#restaurantmenu)`>` | `false` |       |             |
-| `branches` | `private` |     `array<`[`Restaurant`](#restaurant)`>`     | `false` |       |
+| Element       |  Access   |              Type              | Unique  | Notes | Description |
+| :------------ | :-------: | :----------------------------: | :-----: | :---- | :---------- |
+| `name`        | `private` |            `string`            | `false` |       |             |
+| `image`       | `private` |            `string`            | `false` |       |             |
+| `phone`       | `private` |            `string`            | `false` |       |             |
+| `email`       | `private` |            `string`            | `false` |       |             |
+| `branches`    | `private` | `array<`[`Branch`](#branch)`>` | `false` |       |
+| `addBranch()` | `public`  |             `bool`             | `false` |       |             |
+
+##### Branch
+
+| Element   |  Access   |                      Type                      | Unique  | Notes | Description |
+| :-------- | :-------: | :--------------------------------------------: | :-----: | :---- | :---------- |
+| `name`    | `private` |                    `string`                    | `false` |       |             |
+| `image`   | `private` |                    `string`                    | `false` |       |             |
+| `address` | `private` |                    `string`                    | `false` |       |             |
+| `menus`   | `private` | `array<`[`RestaurantMenu`](#restaurantmenu)`>` | `false` |       |             |
 
 ##### RestaurantMenu
 
