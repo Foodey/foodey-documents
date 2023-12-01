@@ -2,16 +2,21 @@
 
 Here is the detail information for class diagram for the project.
 
-- 💻 [List Of Class](#list-of-class)
+- 💻 [List Of Class, Interface, Enum](#list-of-class-interface-enum)
+- 📊 [Diagram](#diagram)
 - 👀 [Detail Of Class, Interface, Enum](#detail-of-class-interface-enum)
-- 📁 [Back To Class Diagram](./only-classname.png)
 
-## List Of Class, Interface, Enum
+## Diagram
+
+![Class Diagram](./imgs/FoodeyClassDiagram.drawio.png)
+
+## <a name="list-of-class-interface-enum"></a>List Of Class, Interface, Enum
 
 #### 2. Class
 
 | Name                                      | Description                                                                                                                                                                                                                                              |
 | :---------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Role](#role)                             |                                                                                                                                                                                                                                                          |
 | [Account](#account)                       | Each registered user will have an account                                                                                                                                                                                                                |
 | [Customer](#customer)                     | The abstract class of FoodeyGuest and FoodeMember                                                                                                                                                                                                        |
 | [FoodeyGuest](#foodeyguest)               | Unregistered account customer                                                                                                                                                                                                                            |
@@ -52,22 +57,32 @@ Here is the detail information for class diagram for the project.
 | [OrderStatus](#orderstatus)     | The status of order   |
 | [ShipperStatus](#shipperstatus) | The status of shipper |
 | [PaymentStatus](#paymentstatus) | The status of payment |
+| [RoleType](#roletype)           | The type of role      |
 
-## Detail Of Class, Interface, Enum
+## <a name="detail-of-class-interface-enum"></a>Detail Of Class, Interface, Enum
 
 #### 1. Class
 
+##### Role
+
+| Element |  Access   |          Type           | Unique | Notes | Description |
+| :------ | :-------: | :---------------------: | :----: | :---- | :---------- |
+| `id`    | `private` |        `string`         | `true` |       |             |
+| `name`  | `private` | [`RoleType`](#roletype) | `true` |       |             |
+
 ##### Account
 
-| Element                |  Access   |               Type                | Unique  | Notes                             | Description                |
-| :--------------------- | :-------: | :-------------------------------: | :-----: | :-------------------------------- | :------------------------- |
-| `phone`                | `private` |             `string`              | `true`  | Value must be a valid email       | Plays the role of username |
-| `password`             | `private` |             `string`              | `false` | Value more than 8 characters      |                            |
-| `name`                 | `private` |             `string`              | `false` | Value more than 8 characters      |                            |
-| `avatar`               | `private` |             `string`              | `false` |                                   |                            |
-| `status`               | `private` | [`AccountStatus`](#accountstatus) | `false` | Default is `AccountStatus.Active` |                            |
-| `shipping_address`     | `private` |             `string`              | `false` | Value more than 8 characters      |                            |
-| `getShippingAddress()` | `public`  |             `string`              | `false` |                                   |                            |
+| Element                |  Access   |               Type                | Unique  | Notes                             | Description |
+| :--------------------- | :-------: | :-------------------------------: | :-----: | :-------------------------------- | :---------- |
+| `username`             | `private` |             `string`              | `true`  | Username is phone number          |             |
+| `password`             | `private` |             `string`              | `false` | Value more than 8 characters      |             |
+| `name`                 | `private` |             `string`              | `false` | Value more than 8 characters      |             |
+| `avatar`               | `private` |             `string`              | `false` |                                   |             |
+| `status`               | `private` | [`AccountStatus`](#accountstatus) | `false` | Default is `AccountStatus.Active` |             |
+| `getShippingAddress()` | `public`  |             `string`              | `false` |                                   |             |
+| `roles`                | `private` |          `array<string>`          | `false` |                                   |             |
+
+<!-- | `shipping_address`     | `private` |             `string`              | `false` | Value more than 8 characters      |             | -->
 
 ##### Customer
 
@@ -198,14 +213,14 @@ Here is the detail information for class diagram for the project.
 
 | Element                                                             |  Access   |                 Type                  | Unique | Notes | Description |
 | :------------------------------------------------------------------ | :-------: | :-----------------------------------: | :----: | :---- | :---------- |
-| `id`                                                                | `private` |            `unsigned long`            |        |       |             |
+| `id`                                                                | `private` |                `long`                 |        |       |             |
 | `name`                                                              | `private` |               `string`                |        |       |             |
 | `image`                                                             | `private` |               `string`                |        |       |             |
-| `price`                                                             | `private` |               `string`                |        |       |             |
+| `price`                                                             | `private` |                `long`                 |        |       |             |
 | `description`                                                       | `private` |               `string`                |        |       |             |
 | `category`                                                          | `private` | [`ProductCategory`](#productcategory) |        |       |             |
 | `inventoryQuantity`                                                 | `private` |                 `int`                 |        |       |             |
-| `restaurantId`                                                      | `private` |            `unsigned long`            |        |       |             |
+| `restaurant`                                                        | `private` |      [`Restaurant`](#restaurant)      |        |       |             |
 | `createAt`                                                          | `private` |              `DateTime`               |        |       |             |
 | `updateAt`                                                          | `private` |              `DateTime`               |        |       |             |
 | `getInventoryQuantity()`                                            | `public`  |                 `int`                 |        |       |             |
