@@ -14,34 +14,34 @@ Here is the detail information for class diagram for the project.
 
 #### 2. Class
 
-| Name                                      | Description                                                                                                                                                                                                                                              |
-| :---------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Role](#role)                             |                                                                                                                                                                                                                                                          |
-| [Account](#account)                       | Each registered user will have an account                                                                                                                                                                                                                |
-| [Customer](#customer)                     | The abstract class of FoodeyGuest and FoodeMember                                                                                                                                                                                                        |
-| [FoodeyGuest](#foodeyguest)               | Unregistered account customer                                                                                                                                                                                                                            |
-| [FoodeyMember](#foodeymember)             | Registered account customer                                                                                                                                                                                                                              |
-| [SystemAdmin](#systemadmin)               | Admin of the system                                                                                                                                                                                                                                      |
-| [Shipper](#shipper)                       | The user who has the ability to deliver                                                                                                                                                                                                                  |
-| [RestaurantOwner](#restaurantowner)       | The owner of the restaurant                                                                                                                                                                                                                              |
-| [RestaurantpingCart](#restaurantpingcart) | Users will add product items that they intend to buy to the restaurantping cart                                                                                                                                                                          |
-| [RestaurantMenu](#restaurantmenu)         | The list of meal in restaurant                                                                                                                                                                                                                           |
-| [Restaurant](#restaurant)                 | The restaurant                                                                                                                                                                                                                                           |
-| [Branch](#branch)                         | Branch of the restaurant                                                                                                                                                                                                                                 |
-| [Order](#order)                           | This will encapsulate a buying order to buy everything in the restaurantping cart                                                                                                                                                                        |
-| [OrderLog](#orderlog)                     | Will keep a track of the status of orders, such as unshipped, pending, complete, canceled, etc.                                                                                                                                                          |
-| [OrderItem](#orderitem)                   | This class will encapsulate a product item that the users will be buying or placing in the restaurantping cart. For example, a pen could be a product and if there are 10 pens in the inventory, each of these 10 pens will be considered a product item |
-| [Bill](#bill)                             | Encapsulate the entity of the bill                                                                                                                                                                                                                       |
-| [Product](#product)                       | This class will encapsulate the entity that the users of our system will be buying and selling. Each Product will belong to a ProductCategory                                                                                                            |
-| [ProductCategory](#productcategory)       | This will encapsulate the different categories of products, such as books, electronics, etc                                                                                                                                                              |
-| [Review](#review)                         | The abstract class of RestaurantReview and ShipperReview                                                                                                                                                                                                 |
-| [RestaurantReview](#restaurantreview)     | Any registered member can add a review about a restaurant                                                                                                                                                                                                |
-| [ShipperReview](#productreview)           | Any registered member can add a review about a shipper                                                                                                                                                                                                   |
-| [Catalog](#catalog)                       | Users of our system can search for products by their name or category and restaurant by their name. This class will keep an index of all products for faster search                                                                                      |
-| [Notification](#notification)             | This class will take care of sending notifications to customers                                                                                                                                                                                          |
-| [SMSNotification](#smsnotification)       | This class will take care of sending notifications to customers by SMS                                                                                                                                                                                   |
-| [EmailNotification](#emailnotification)   | This class will take care of sending notifications to customers by Email                                                                                                                                                                                 |
-| [Payment](#payment)                       | This class will encapsulate the payment for an order. Members can pay through credit card(not now) or cash                                                                                                                                               |
+| Name                                    | Description                                                                                                                                                                                                                                              |
+| :-------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Role](#role)                           |                                                                                                                                                                                                                                                          |
+| [Account](#account)                     | Each registered user will have an account                                                                                                                                                                                                                |
+| [Customer](#customer)                   | The abstract class of FoodeyGuest and FoodeMember                                                                                                                                                                                                        |
+| [FoodeyGuest](#foodeyguest)             | Unregistered account customer                                                                                                                                                                                                                            |
+| [FoodeyMember](#foodeymember)           | Registered account customer                                                                                                                                                                                                                              |
+| [SystemAdmin](#systemadmin)             | Admin of the system                                                                                                                                                                                                                                      |
+| [Shipper](#shipper)                     | The user who has the ability to deliver                                                                                                                                                                                                                  |
+| [RestaurantOwner](#restaurantowner)     | The owner of the restaurant                                                                                                                                                                                                                              |
+| [ShoppingCart](#shoppingcart)           | Users will add product items that they intend to buy to the restaurantping cart                                                                                                                                                                          |
+| [RestaurantMenu](#restaurantmenu)       | The list of meal in restaurant                                                                                                                                                                                                                           |
+| [Restaurant](#restaurant)               | The restaurant                                                                                                                                                                                                                                           |
+| [Branch](#branch)                       | Branch of the restaurant                                                                                                                                                                                                                                 |
+| [Order](#order)                         | This will encapsulate a buying order to buy everything in the restaurantping cart                                                                                                                                                                        |
+| [OrderLog](#orderlog)                   | Will keep a track of the status of orders, such as unshipped, pending, complete, canceled, etc.                                                                                                                                                          |
+| [OrderItem](#orderitem)                 | This class will encapsulate a product item that the users will be buying or placing in the restaurantping cart. For example, a pen could be a product and if there are 10 pens in the inventory, each of these 10 pens will be considered a product item |
+| [Bill](#bill)                           | Encapsulate the entity of the bill                                                                                                                                                                                                                       |
+| [Product](#product)                     | This class will encapsulate the entity that the users of our system will be buying and selling. Each Product will belong to a ProductCategory                                                                                                            |
+| [ProductCategory](#productcategory)     | This will encapsulate the different categories of products, such as books, electronics, etc                                                                                                                                                              |
+| [Review](#review)                       | The abstract class of RestaurantReview and ShipperReview                                                                                                                                                                                                 |
+| [RestaurantReview](#restaurantreview)   | Any registered member can add a review about a restaurant                                                                                                                                                                                                |
+| [ShipperReview](#productreview)         | Any registered member can add a review about a shipper                                                                                                                                                                                                   |
+| [Catalog](#catalog)                     | Users of our system can search for products by their name or category and restaurant by their name. This class will keep an index of all products for faster search                                                                                      |
+| [Notification](#notification)           | This class will take care of sending notifications to customers                                                                                                                                                                                          |
+| [SMSNotification](#smsnotification)     | This class will take care of sending notifications to customers by SMS                                                                                                                                                                                   |
+| [EmailNotification](#emailnotification) | This class will take care of sending notifications to customers by Email                                                                                                                                                                                 |
+| [Payment](#payment)                     | This class will encapsulate the payment for an order. Members can pay through credit card(not now) or cash                                                                                                                                               |
 
 #### 2. Interface
 
@@ -82,8 +82,6 @@ Here is the detail information for class diagram for the project.
 | `getShippingAddress()` | `public`  |             `string`              | `false` |                                   |             |
 | `roles`                | `private` |          `array<string>`          | `false` |                                   |             |
 
-<!-- | `shipping_address`     | `private` |             `string`              | `false` | Value more than 8 characters      |             | -->
-
 ##### Customer
 
 | Element                   |  Access  |                 Type                 | Unique | Notes | Description |
@@ -104,17 +102,18 @@ Here is the detail information for class diagram for the project.
 
 **NOTE**: Inherit from [`Customer`](#customer) class.
 
-| Element                   |  Access   |               Type                | Unique  | Notes | Description                       |
-| :------------------------ | :-------: | :-------------------------------: | :-----: | :---- | :-------------------------------- |
-| `orders`                  | `private` |   `array<`[`Order`](#order)`>`    | `false` |       |                                   |
-| `account`                 | `private` |       [`Account`](#account)       | `false` |       |                                   |
-| `order()`                 | `public`  |              `bool`               | `false` |       |                                   |
-| `favoriteProductIds`      | `private` |          `array<string>`          | `false` |       |                                   |
-| `getFavoriteProducts()`   | `public`  | `array<`[`Product`](#produuct)`>` | `false` |       |                                   |
-| `addFavoriteProduct()`    | `public`  |              `bool`               | `false` |       |                                   |
-| `getOldOrders()`          | `public`  |              `bool`               | `false` |       | Get completed orders              |
-| `getNotDeliveredOrders()` | `public`  |              `bool`               | `false` |       | Get the not delivered list orders |
-| `trackProfit()`           | `public`  |          `unsigned long`          | `false` |       |                                   |
+| Element                   |  Access   |               Type                | Unique  | Notes                        | Description                       |
+| :------------------------ | :-------: | :-------------------------------: | :-----: | :--------------------------- | :-------------------------------- |
+| `orders`                  | `private` |   `array<`[`Order`](#order)`>`    | `false` |                              |                                   |
+| `account`                 | `private` |       [`Account`](#account)       | `false` |                              |                                   |
+| `order()`                 | `public`  |              `bool`               | `false` |                              |                                   |
+| `shipping_address`        | `private` |             `string`              | `false` | Value more than 8 characters |                                   |
+| `favoriteProductIds`      | `private` |          `array<string>`          | `false` |                              |                                   |
+| `getFavoriteProducts()`   | `public`  | `array<`[`Product`](#produuct)`>` | `false` |                              |                                   |
+| `addFavoriteProduct()`    | `public`  |              `bool`               | `false` |                              |                                   |
+| `getOldOrders()`          | `public`  |              `bool`               | `false` |                              | Get completed orders              |
+| `getNotDeliveredOrders()` | `public`  |              `bool`               | `false` |                              | Get the not delivered list orders |
+| `trackProfit()`           | `public`  |          `unsigned long`          | `false` |                              |                                   |
 
 ##### SystemAdmin
 
@@ -154,7 +153,7 @@ Here is the detail information for class diagram for the project.
 | `deleteRestaurant()`   | `public`  |                `boold`                 | `false` |       |                                      |
 | `trackProfit()`        | `public`  |            `unsigned long`             | `false` |       |                                      |
 
-##### RestaurantpingCart
+##### ShoppingCart
 
 | Element                |  Access   |                 Type                 | Unique  | Notes | Description |
 | :--------------------- | :-------: | :----------------------------------: | :-----: | :---- | :---------- |
@@ -218,11 +217,11 @@ Here is the detail information for class diagram for the project.
 | `image`                                                             | `private` |               `string`                |        |       |             |
 | `price`                                                             | `private` |                `long`                 |        |       |             |
 | `description`                                                       | `private` |               `string`                |        |       |             |
-| `category`                                                          | `private` | [`ProductCategory`](#productcategory) |        |       |             |
+| `productCategory`                                                   | `private` | [`ProductCategory`](#productcategory) |        |       |             |
 | `inventoryQuantity`                                                 | `private` |                 `int`                 |        |       |             |
 | `restaurant`                                                        | `private` |      [`Restaurant`](#restaurant)      |        |       |             |
-| `createAt`                                                          | `private` |              `DateTime`               |        |       |             |
-| `updateAt`                                                          | `private` |              `DateTime`               |        |       |             |
+| `createAt`                                                          | `private` |               `Instant`               |        |       |             |
+| `updateAt`                                                          | `private` |               `Instant`               |        |       |             |
 | `getInventoryQuantity()`                                            | `public`  |                 `int`                 |        |       |             |
 | `update([name,image,price,description,category,inventoryQuantity])` | `public`  |                `bool`                 |        |       |
 
