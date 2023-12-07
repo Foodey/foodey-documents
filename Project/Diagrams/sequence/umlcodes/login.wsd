@@ -1,0 +1,63 @@
+@startuml Login Sequence Diagram
+
+title <size: 30> Login Sequence Diagram
+
+skinparam Style strictuml
+skinparam sequenceMessageAlign center
+
+actor "Customer" as Cm
+participant ":Login Screen" as LI
+participant ":Authentication Server" as AS
+participant ":Homepage Screen" as HP
+
+autonumber
+
+activate Cm
+Cm -> LI: Tap on application icon
+activate LI
+LI --> Cm: Display to user
+
+'=============== Phone Number ==============='
+Cm -> LI: Input Phone Number
+LI -> AS: Check Phone Number
+activate AS
+
+alt Phone Number is match
+    AS --> LI: Phone Number is valid
+    LI --> Cm: Display hidden typed phone number with dots
+else Phone Number is not match
+    AS --> LI: Phone Number is invalid
+    LI --> Cm: Log message: "Phone number or Password is wrong!"
+end
+
+
+'=============== Password ==============='
+Cm -> LI: Input Password
+activate LI
+LI -> AS: Check Password
+activate AS
+
+alt Password is match
+    AS --> LI: Password is valid
+    LI --> Cm: Display hidden typed password with dots
+else Password is not match
+    AS --> LI: Password is invalid
+    LI --> Cm: Log message: "Phone number or Password is wrong!"
+end
+
+'=============== Login ==============='
+Cm -> LI: Tap on "Login" button
+
+activate LI
+LI --> AS: Verify user information
+deactivate LI
+
+activate AS
+AS --> HP: Navigate to Homepage Screen
+deactivate AS
+
+activate HP
+HP --> Cm: Display to user
+deactivate HP
+
+@enduml

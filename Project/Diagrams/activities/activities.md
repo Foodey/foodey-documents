@@ -37,3 +37,7 @@
 ## Update Profile
 
 ![update-profile](./update-profile.png)
+
+## Add Discount From Restaurant Owner
+
+![add-discount-from-restaurant-owner](./add-discount-from-restaurant-owner.png)
