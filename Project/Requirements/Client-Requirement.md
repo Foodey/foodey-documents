@@ -13,64 +13,64 @@ Hệ thống hoạt động như sau:
 
 Mỗi người dùng có thể:
 
-- Đăng ký/đăng nhập
-- Lấy lại mật khẩu đã quên
-- Chỉnh sửa thông tin tài khoản
+- [x] Đăng ký/đăng nhập
+- [] Lấy lại mật khẩu đã quên
+- [] Chỉnh sửa thông tin tài khoản
 
 #### Customer
 
-- [x] Xem danh sách các cửa hàng
-- [x] Tra cứu các cửa hàng
-- [x] Tra cứu các món ăn
-- [x] Thêm món ăn vào giỏ hàng
-- [x] Chỉnh sửa số lượng/Xoá món ăn trong giỏ hàng
-- [x] CRUD thông tin giao hàng
-- [x] Áp dụng phương thức thanh toán
-- [x] Áp dụng các mã giảm giá
-- [x] Đặt hàng
-- [x] Huỷ đơn hàng
-- [x] Theo dõi trạng thái đơn hàng
-- [x] Liên hệ với Show Owner thông qua hotline
-- [x] Đánh giá đơn hàng
-- [x] Xem lịch sử mua hàng
+- [] Xem danh sách các cửa hàng
+- [] Tra cứu các cửa hàng
+- [] Tra cứu các món ăn
+- [] Thêm món ăn vào giỏ hàng
+- [] Chỉnh sửa số lượng/Xoá món ăn trong giỏ hàng
+- [] CRUD thông tin giao hàng
+- [] Áp dụng phương thức thanh toán
+- [] Áp dụng các mã giảm giá
+- [] Đặt hàng
+- [] Huỷ đơn hàng
+- [] Theo dõi trạng thái đơn hàng
+- [] Liên hệ với Show Owner thông qua hotline
+- [] Đánh giá đơn hàng
+- [] Xem lịch sử mua hàng
 - [x] CRUD danh sách yêu thích
 - [x] Đánh giá cửa hàng, shipper
 
 #### Shop Owner
 
-- [x] Đăng ký thông tin cửa hàng trên sàn Foodey
-- [x] CRUD thông tin cửa hàng
-- [x] CRUD các món ăn của cửa hàng
-- [x] CRUD các mã giảm giá
-- [x] Hiển thị danh sách món ăn khi nhấn vào xem menu của cửa hàng
-- [x] Điều chỉnh trạng thái đơn đặt hàng và hiển thị cho Customer
-- [x] Theo dõi tình trạng đơn hàng của Customer
-- [x] Liên hệ với Customer thông qua số điện thoại
-- [x] Theo dõi các đánh giá từ Customer
-- [x] Xem báo cáo doanh thu và lợi nhuận theo tháng/quý/năm
+- [] Đăng ký thông tin cửa hàng trên sàn Foodey
+- [] CRUD thông tin cửa hàng
+- [] CRUD các món ăn của cửa hàng
+- [] CRUD các mã giảm giá
+- [] Hiển thị danh sách món ăn khi nhấn vào xem menu của cửa hàng
+- [] Điều chỉnh trạng thái đơn đặt hàng và hiển thị cho Customer
+- [] Theo dõi tình trạng đơn hàng của Customer
+- [] Liên hệ với Customer thông qua số điện thoại
+- [] Theo dõi các đánh giá từ Customer
+- [] Xem báo cáo doanh thu và lợi nhuận theo tháng/quý/năm
 
 **NOTE**: Nếu là một chuỗi nhà hàng,
 
 - [x] Đăng ký nhiều cửa hàng trên sàn Foodey.
-- [x] Hiển thị danh sách chi nhánh các cửa hàng đã đăng ký
-- [x] CRUD thông tin các chi nhánh
+- [] Hiển thị danh sách chi nhánh các cửa hàng đã đăng ký
+- [] CRUD thông tin các chi nhánh
 
 #### Shipper
 
 - [x] Đăng ký thông tin cá nhân và phương tiện sử dụng để giao hàng trên sàn Foodey
-- [x] Nhận được đơn đặt hàng của khách hàng trong phạm vi bán kính 5km
-- [x] Lựa chọn chấp thuận hoặc từ chối nhận đơn hàng
-- [x] Xem thông tin địa chỉ nhà hàng cũng như thông tin chi tiết đơn hàng mà Customer đã đặt ở nhà hàng đó
-- [x] Xem thông tin địa chỉ và số điện thoại của khách hàng để liên lạc giao hàng
-- [x] Ứng dụng hiển thị một bản đồ chỉ dẫn tới địa chỉ của nhà hàng cũng như đến địa chỉ giao hàng của Customer.
+- [] Nhận được đơn đặt hàng của khách hàng trong phạm vi bán kính 5km
+- [] Lựa chọn chấp thuận hoặc từ chối nhận đơn hàng
+- [] Xem thông tin địa chỉ nhà hàng cũng như thông tin chi tiết đơn hàng mà Customer đã đặt ở nhà hàng đó
+- [] Xem thông tin địa chỉ và số điện thoại của khách hàng để liên lạc giao hàng
+- [] Ứng dụng hiển thị một bản đồ chỉ dẫn tới địa chỉ của nhà hàng cũng như đến địa chỉ giao hàng của Customer.
 
 #### System Admin
 
-- [x] Tương tác với Shop Owner
-- [x] Tương tác với Shipper
-- [x] Xác thực thông tin đăng ký của các cửa hàng
-- [x] Xác thực thông tin đăng ký của các Shipper
-- [x] Lập danh sách các cửa hàng đã đăng ký thành công
-- [x] Tra cứu cửa hàng
-- [x] Tra cứu các Shipper
-- [x] Xem lợi nhuận kiếm được từ tiền hoa hồng của các cửa hàng và shipper
+- [] Tương tác với Shop Owner
+- [] Tương tác với Shipper
+- [] Xác thực thông tin đăng ký của các cửa hàng
+- [] Xác thực thông tin đăng ký của các Shipper
+- [] Lập danh sách các cửa hàng đã đăng ký thành công
+- [] Tra cứu cửa hàng
+- [] Tra cứu các Shipper
+- [] Xem lợi nhuận kiếm được từ tiền hoa hồng của các cửa hàng và shipper
