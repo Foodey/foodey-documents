@@ -19,8 +19,8 @@ Mỗi người dùng có thể:
 
 #### Customer
 
-- [] Xem danh sách các cửa hàng
-- [] Tra cứu các cửa hàng
+- [x] Xem danh sách các cửa hàng
+- [x] Tra cứu các cửa hàng
 - [] Tra cứu các món ăn
 - [] Thêm món ăn vào giỏ hàng
 - [] Chỉnh sửa số lượng/Xoá món ăn trong giỏ hàng
@@ -38,7 +38,7 @@ Mỗi người dùng có thể:
 
 #### Shop Owner
 
-- [] Đăng ký thông tin cửa hàng trên sàn Foodey
+- [x] Đăng ký thông tin cửa hàng trên sàn Foodey
 - [] CRUD thông tin cửa hàng
 - [] CRUD các món ăn của cửa hàng
 - [] CRUD các mã giảm giá
@@ -52,7 +52,7 @@ Mỗi người dùng có thể:
 **NOTE**: Nếu là một chuỗi nhà hàng,
 
 - [x] Đăng ký nhiều cửa hàng trên sàn Foodey.
-- [] Hiển thị danh sách chi nhánh các cửa hàng đã đăng ký
+- [x] Hiển thị danh sách chi nhánh các cửa hàng đã đăng ký
 - [] CRUD thông tin các chi nhánh
 
 #### Shipper
@@ -68,9 +68,8 @@ Mỗi người dùng có thể:
 
 - [] Tương tác với Shop Owner
 - [] Tương tác với Shipper
-- [] Xác thực thông tin đăng ký của các cửa hàng
-- [] Xác thực thông tin đăng ký của các Shipper
-- [] Lập danh sách các cửa hàng đã đăng ký thành công
-- [] Tra cứu cửa hàng
+- [x] Xác thực thông tin đăng ký của các cửa hàng
+- [x] Xác thực thông tin đăng ký của các Shipper
+- [x] Tra cứu cửa hàng
 - [] Tra cứu các Shipper
 - [] Xem lợi nhuận kiếm được từ tiền hoa hồng của các cửa hàng và shipper
