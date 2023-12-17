@@ -20,8 +20,8 @@ Mỗi người dùng có thể:
 #### Customer
 
 - [x] Xem danh sách các cửa hàng
-- [x] Tra cứu các cửa hàng
-- [] Tra cứu các món ăn
+- [x] Tra cứu các cửa hàng theo tên
+- [x] Tra cứu các món ăn theo tên
 - [x] Thêm món ăn vào giỏ hàng
 - [x] Chỉnh sửa số lượng/Xoá món ăn trong giỏ hàng
 - [] CRUD thông tin giao hàng
