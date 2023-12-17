@@ -15,17 +15,17 @@ Mỗi người dùng có thể:
 
 - [x] Đăng ký/đăng nhập
 - [] Lấy lại mật khẩu đã quên
-- [] Chỉnh sửa thông tin tài khoản
+- [] Chỉnh sửa thông tin tài khoản (Tên, Địa chỉ, Email, Mật khẩu, Avatar)
 
 #### Customer
 
 - [x] Xem danh sách các cửa hàng
 - [x] Tra cứu các cửa hàng
 - [] Tra cứu các món ăn
-- [] Thêm món ăn vào giỏ hàng
-- [] Chỉnh sửa số lượng/Xoá món ăn trong giỏ hàng
+- [x] Thêm món ăn vào giỏ hàng
+- [x] Chỉnh sửa số lượng/Xoá món ăn trong giỏ hàng
 - [] CRUD thông tin giao hàng
-- [] Áp dụng phương thức thanh toán
+- [] Áp dụng phương thức thanh toán(Thanh toán khi nhận hàng hiện tại)
 - [] Áp dụng các mã giảm giá
 - [] Đặt hàng
 - [] Huỷ đơn hàng
@@ -40,9 +40,9 @@ Mỗi người dùng có thể:
 
 - [x] Đăng ký thông tin cửa hàng trên sàn Foodey
 - [] CRUD thông tin cửa hàng
-- [] CRUD các món ăn của cửa hàng
+- [] CRUD các món ăn của cửa hàng (Done `Thêm`)
 - [] CRUD các mã giảm giá
-- [] Hiển thị danh sách món ăn khi nhấn vào xem menu của cửa hàng
+- [x] Hiển thị danh sách món ăn khi nhấn vào xem menu của cửa hàng trên sàn Foodey
 - [] Điều chỉnh trạng thái đơn đặt hàng và hiển thị cho Customer
 - [] Theo dõi tình trạng đơn hàng của Customer
 - [] Liên hệ với Customer thông qua số điện thoại
