@@ -128,18 +128,18 @@ Here is the detail information for class diagram for the project.
 
 ##### Shipper
 
-| Element                                  |  Access   |               Type                | Unique  | Notes | Description                          |
-| :--------------------------------------- | :-------: | :-------------------------------: | :-----: | :---- | :----------------------------------- |
-| `identifyImages`                         | `private` |          `array<string>`          | `false` |       | 2 anh can cuoc cong dan (truoc, sau) |
-| `motorbicycleLicenseImages`              | `private` |          `array<string>`          | `false` |       | 2 anh bang lai xe (truoc, sau)       |
-| `motorbikeRegistrationCertificateImages` | `private` |          `array<string>`          | `false` |       | 2 anh giay dang ky xe (truoc, sau)   |
-| `judicialResumeImage`                    | `private` |             `string`              | `false` |       | 1 anh giay to tien pham              |
-| `account`                                | `private` |       [`Account`](#account)       | `false` |       |                                      |
-| `status`                                 | `private` | [`ShipperStatus`](#shipperstatus) | `false` |       |                                      |
-| `getCurrentLocation()`                   | `public`  |             `string`              | `false` |       |                                      |
-| `getCurrentCustomerOrders()`             | `public`  |   `array<`[`Order`](#order)`>`    | `false` |       |                                      |
-| `receiveOrder()`                         | `public`  |         [`Order`](#order)         | `false` |       |                                      |
-| `declineOrder()`                         | `public`  |         [`Order`](#order)         | `false` |       |                                      |
+| Element                      |  Access   |               Type                | Unique  | Notes | Description                          |
+| :--------------------------- | :-------: | :-------------------------------: | :-----: | :---- | :----------------------------------- |
+| `identifyImages`             | `private` |          `array<string>`          | `false` |       | 2 anh can cuoc cong dan (truoc, sau) |
+| `driverLicenseImages`        | `private` |          `array<string>`          | `false` |       | 2 anh bang lai xe (truoc, sau)       |
+| `registrationPapersImages`   | `private` |          `array<string>`          | `false` |       | 2 anh giay dang ky xe (truoc, sau)   |
+| `judicialResumeImage`        | `private` |             `string`              | `false` |       | 1 anh giay to tien pham              |
+| `account`                    | `private` |       [`Account`](#account)       | `false` |       |                                      |
+| `status`                     | `private` | [`ShipperStatus`](#shipperstatus) | `false` |       |                                      |
+| `getCurrentLocation()`       | `public`  |             `string`              | `false` |       |                                      |
+| `getCurrentCustomerOrders()` | `public`  |   `array<`[`Order`](#order)`>`    | `false` |       |                                      |
+| `receiveOrder()`             | `public`  |         [`Order`](#order)         | `false` |       |                                      |
+| `declineOrder()`             | `public`  |         [`Order`](#order)         | `false` |       |                                      |
 
 ##### RestaurantOwner
 
