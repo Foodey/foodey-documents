@@ -26,13 +26,13 @@ Mỗi người dùng có thể:
 - [x] Chỉnh sửa số lượng/Xoá món ăn trong giỏ hàng
 - [] CRUD thông tin giao hàng
 - [] Áp dụng phương thức thanh toán(Thanh toán khi nhận hàng hiện tại)
-- [] Áp dụng các mã giảm giá
-- [] Đặt hàng
+- [x] Áp dụng các mã giảm giá
+- [x] Đặt hàng
 - [] Huỷ đơn hàng
 - [] Theo dõi trạng thái đơn hàng
-- [] Liên hệ với Show Owner thông qua hotline
+- [] Liên hệ với Restaurant Owner thông qua hotline
 - [] Đánh giá đơn hàng
-- [] Xem lịch sử mua hàng
+- [x] Xem lịch sử mua hàng
 - [x] CRUD danh sách yêu thích
 - [x] Đánh giá cửa hàng, shipper
 
